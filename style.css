@@ -163,3 +163,65 @@ header.scrolled {
     z-index: -1;
     animation: whatsapp-ripple 2s ease-out infinite;
 }
+
+/* Payment Options Section - قسم خيارات التقسيط */
+/* تنسيق القسم بعد نقله خارج الهيرو */
+section[class*="py-8"][class*="bg-white"] {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* تنسيق أيقونات التقسيط على الخلفية البيضاء */
+section[class*="py-8"][class*="bg-white"] .floating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(247,250,252,0.8) 100%);
+    border: 1px solid rgba(123, 197, 174, 0.2);
+    box-shadow: 0 4px 12px rgba(123, 197, 174, 0.15), 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+section[class*="py-8"][class*="bg-white"] .floating:hover {
+    box-shadow: 0 6px 16px rgba(123, 197, 174, 0.25), 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px) scale(1.05);
+    border-color: rgba(123, 197, 174, 0.4);
+}
+
+/* تنسيق عنوان قسم خيارات التقسيط */
+section[class*="py-8"][class*="bg-white"] > p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #2B3A67;
+    letter-spacing: 0.025em;
+    margin-bottom: 1.5rem;
+}
+
+/* تنسيق صف الأيقونات */
+section[class*="py-8"][class*="bg-white"] > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* زر احجز موعدك - التأكد من احتفاظه بالتنسيقات الفخمة */
+.hero-bg a[href*="wa.me"] {
+    position: relative;
+    z-index: 10;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* تحسين responsive للأيقونات على الشاشات الصغيرة */
+@media (max-width: 640px) {
+    section[class*="py-8"][class*="bg-white"] > div {
+        gap: 1rem;
+    }
+
+    section[class*="py-8"][class*="bg-white"] .floating img {
+        height: 4rem !important;
+    }
+}
