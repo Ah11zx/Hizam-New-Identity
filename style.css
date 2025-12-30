@@ -28,22 +28,17 @@ html, body {
 
 /* Hero Background (خلفية القسم الرئيسي) */
 .hero-bg {
-    /* تدرج لوني احترافي من الكحلي الغامق إلى التركوازي */
-    background:
-        /* دوائر توهج خفيفة في الزوايا لإضافة عمق */
-        radial-gradient(circle at 20% 80%, rgba(123, 197, 174, 0.12) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-        /* نقشة نقاط دقيقة وخفيفة جداً (Grid Pattern) */
-        radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-        /* التدرج اللوني الرئيسي */
-        linear-gradient(135deg,
-            #0f172a 0%,      /* كحلي غامق */
-            #1e3a8a 30%,     /* أزرق ملكي */
-            #0ea5e9 60%,     /* أزرق سماوي */
-            #7BC5AE 100%     /* تركوازي/تيفاني */
-        );
-    background-size: 100% 100%, 100% 100%, 20px 20px, 100% 100%;
-    background-position: 0 0, 0 0, 0 0, 0 0;
+    /* خلفية الهيرو مع طبقة تغطية داكنة لوضوح النصوص البيضاء */
+    background-image:
+        /* طبقة التغطية الداكنة (Dark Overlay) */
+        linear-gradient(
+            rgba(15, 23, 42, 0.85),
+            rgba(15, 23, 42, 0.65)
+        ),
+        /* الصورة الأساسية */
+        url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
 }
