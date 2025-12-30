@@ -30,10 +30,10 @@ html, body {
 .hero-bg {
     /* خلفية الهيرو مع طبقة تغطية داكنة لوضوح النصوص البيضاء */
     background-image:
-        /* طبقة التغطية الداكنة (Dark Overlay) */
+        /* طبقة التغطية الداكنة (Dark Navy Overlay) */
         linear-gradient(
-            rgba(15, 23, 42, 0.85),
-            rgba(15, 23, 42, 0.65)
+            rgba(13, 25, 48, 0.9),
+            rgba(13, 25, 48, 0.7)
         ),
         /* الصورة الأساسية */
         url('images/hero-bg.jpg');
