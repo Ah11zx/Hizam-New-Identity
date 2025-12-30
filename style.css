@@ -28,17 +28,10 @@ html, body {
 
 /* Hero Background (خلفية القسم الرئيسي) */
 .hero-bg {
-    /* خلفية الهيرو مع طبقة تغطية داكنة لوضوح النصوص البيضاء */
-    background-image:
-        /* طبقة التغطية الداكنة (Dark Navy Overlay) */
-        linear-gradient(
-            rgba(13, 25, 48, 0.9),
-            rgba(13, 25, 48, 0.7)
-        ),
-        /* الصورة الأساسية */
-        url('images/hero-bg.jpg');
+    background-image: linear-gradient(to bottom, rgba(13, 25, 48, 0.85), rgba(13, 25, 48, 0.6)), url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
 }
