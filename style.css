@@ -19,16 +19,16 @@ html, body {
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #0d9488;
+    background: #7BC5AE;
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #0f766e;
+    background: #5FA88E;
 }
 
 /* Hero Background (خلفية القسم الرئيسي) */
 .hero-bg {
-    background-image: linear-gradient(rgba(30, 58, 138, 0.85), rgba(13, 148, 136, 0.7)), url('images/hero-bg.jpg');
+    background-image: linear-gradient(rgba(43, 58, 103, 0.85), rgba(123, 197, 174, 0.7)), url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
