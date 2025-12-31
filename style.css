@@ -48,6 +48,12 @@ html, body {
     z-index: 1;
 }
 
+/* Hero Headline Compact - تقليل المسافة بين الكلمات */
+.hero-headline-compact {
+    word-spacing: -0.15em;
+    letter-spacing: -0.02em;
+}
+
 /* Card Hover Effects (تأثيرات الكروت) */
 .service-card {
     transition: all 0.3s ease;
