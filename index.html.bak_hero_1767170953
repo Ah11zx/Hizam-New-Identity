@@ -133,15 +133,15 @@
         </div>
     </header>
 
-    <section id="home" class="hero-bg min-h-screen flex items-end justify-center text-center pt-20 pb-32 relative overflow-hidden">
+    <section id="home" class="hero-bg min-h-screen flex items-center justify-start text-center pt-20 pb-20 relative overflow-hidden">
 
-        <!-- CTA Button - Bottom Center -->
-        <div class="container mx-auto px-4 relative z-10 flex justify-center pb-10">
-            <a href="https://wa.me/966550110046" target="_blank"
-               class="border border-white/70 bg-white/10 backdrop-blur-sm text-white hover:bg-white/20 px-8 py-3 rounded-full text-base font-bold transition-all duration-300 flex items-center justify-center gap-3 w-auto"
-               data-aos="fade-up" data-aos-delay="600">
-                <i class="fa-brands fa-whatsapp text-xl"></i> احجز موعدك الآن
-            </a>
+        <!-- Content -->
+        <div class="container mx-auto px-4 relative z-10 flex flex-col justify-start h-full pt-16 pb-24">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-auto px-4 mt-32" data-aos="fade-up" data-aos-delay="600">
+                <a href="https://wa.me/966550110046" target="_blank" class="bg-[#0f172a] hover:bg-slate-800 text-white px-8 py-4 rounded-full text-lg font-bold transition-all duration-300 flex items-center justify-center gap-3 shadow-[0_10px_20px_-10px_rgba(15,23,42,0.5)] hover:shadow-[0_15px_30px_-12px_rgba(15,23,42,0.7)] hover:-translate-y-1 w-full sm:w-auto whatsapp-pulse">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i> احجز موعدك الآن
+                </a>
+            </div>
         </div>
 
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-1">

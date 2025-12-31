@@ -127,18 +127,41 @@ header.scrolled {
     animation: shine 5s infinite;
 }
 
-/* Modern CTA Button - زر عصري وهادئ بتصميم Glassmorphism */
-.hero-bg a[href*="wa.me"] {
-    position: relative;
-    z-index: 10;
-    font-weight: 700;
-    text-shadow: none;
-    /* تأثير خفيف عند التمرير */
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* WhatsApp Pulse Animation - تأثير نبض زر الواتساب */
+@keyframes whatsapp-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
 }
 
-.hero-bg a[href*="wa.me"]:hover {
-    transform: translateY(-2px);
+/* Ripple/Glow Effect - تأثير التموج والتوهج */
+@keyframes whatsapp-ripple {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+.whatsapp-pulse {
+    position: relative;
+    animation: whatsapp-pulse 2s ease-in-out infinite;
+}
+
+.whatsapp-pulse::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: rgba(34, 197, 94, 0.4);
+    z-index: -1;
+    animation: whatsapp-ripple 2s ease-out infinite;
 }
 
 /* Payment Options Section - قسم خيارات التقسيط */
